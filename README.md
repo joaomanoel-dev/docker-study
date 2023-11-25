@@ -176,5 +176,20 @@ CMD - executa comandos depois que a imagem é criada
 ## Logs docker compose
 - docker-compose logs
 
+## Docker on Cloud
+
+- Google Cloud Run
+
+App foi instanciada em cloud pelo serviço Google Cloud Run e está disponivel no link [App Docker](https://app-docker-study-urmzgmw2ya-rj.a.run.app/)
+
+### Comandos utilizados no cloud shell da google
+`docker pull docker.io/joaomanoeldev/app:v2`
+
+`docker tag d180054895bf us.gcr.io/optimum-lodge-406223/app`
+
+`sudo usermod -a -G docker jaumnetto`
+
+`gcloud auth configure-docker`
 
 
+`docker push us.gcr.io/optimum-lodge-406223/app`
